@@ -31,7 +31,7 @@ export default function GithubExercisesSection() {
         className="py-16 px-8 bg-[var(--bg-color)] text-[var(--text-color)] relative overflow-hidden"
       >
         {/* Illustration en fond */}
-        <div className="flex absolute mr-10 top-[-100px] left-13.5  z-0 pointer-events-none md:top-0 h-screen">
+        <div className="flex absolute mr-10 top-[-100px] md:left-29  z-0 pointer-events-none top-0 h-screen">
           <img src={vecteures} alt="Placeholder" className="object-cover" />
         </div>
 

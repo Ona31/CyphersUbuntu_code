@@ -31,8 +31,11 @@ export default function AboutCom() {
 
       <section
         ref={sectionRef}
-        className="py-16 px-8 bg-[var(--bg-color)] text-[var(--text-color)] "
+        className="py-16 px-8 bg-[var(--bg-color)] text-[var(--text-color)] relative"
       >
+         <div className="flex absolute md:left-29 right-2 md:h-screen top-0">
+            <img src={vecteurs} alt="Placeholder" />
+        </div>
         <h2 className={`text-3xl md:text-4xl font-bold text-center mb-10 ${visible ? "fade-up" : ""}`}>
           Pourquoi apprendre à coder ?
         </h2>
@@ -73,9 +76,7 @@ export default function AboutCom() {
             </div>
           ))}
         </div>
-        <div className="flex absolute mr-10 h-screen">
-            <img src={vecteurs} alt="Placeholder" className="object-cover" />
-        </div>
+       
       </section>
     </>
   );
