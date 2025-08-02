@@ -58,7 +58,7 @@ export default function HeroSectionAnimated() {
              bg-[url('./assets/bg/bg.png')] bg-cover bg-center bg-blend-overlay
              h-auto md:h-screen
              pt-12 md:pt-20
-             px-6 md:px-16 lg:px-32
+             px-6 md:px-46 lg:px-32
              overflow-hidden"
 >
   {/* Texte */}
