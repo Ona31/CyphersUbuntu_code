@@ -1,0 +1,46 @@
+/*Importation du style tailwindcss*/
+@import "tailwindcss";
+
+/*Variables de couleur spécifiques*/
+:root {
+  --primary-color: #4F46E5;
+  --bg-color: #081028;
+  --secondary-color: #6B7280;
+  --accent-color: #FBBF24;
+  --text-color: #ffffff;
+  --color-2: #1d293db8;
+}
+
+/*les animations*/
+
+/* Apparition : glisse de la droite vers la position normale */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Disparition : glisse vers la droite en sortant */
+@keyframes slideOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.5s forwards;
+}
+
+.slide-out-right {
+  animation: slideOutRight 0.5s forwards;
+}
