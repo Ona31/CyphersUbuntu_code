@@ -73,8 +73,8 @@ export default function AboutCom() {
             </div>
           ))}
         </div>
-        <div className="flex absolute mr-10">
-            <img src={vecteurs} alt="Placeholder" />
+        <div className="flex absolute mr-10 h-screen">
+            <img src={vecteurs} alt="Placeholder" className="object-cover" />
         </div>
       </section>
     </>
