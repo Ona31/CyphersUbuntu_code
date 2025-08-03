@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import vecteurese from "../../assets/bg/chevron.png";
+
 
 
 export default function LangagesSection() {
@@ -33,9 +33,7 @@ export default function LangagesSection() {
         ref={sectionRef}
         className="py-16 px-8 bg-[var(--bg-color)] text-[var(--text-color)] relative"
       >
- <div className="flex absolute mr-10 top-[-100px] md:left-29  z-0 pointer-events-none top-0 h-screen">
-             <img src={vecteurese} alt="Placeholder" />
-         </div>
+ 
         <h2 className={`text-3xl md:text-4xl font-bold text-center mb-10 ${visible ? "fade-up" : ""}`}>
           Langages que vous allez apprendre
         </h2>
