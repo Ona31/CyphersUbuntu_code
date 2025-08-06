@@ -1,7 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 
-
-
 export default function LangagesSection() {
   const sectionRef = useRef(null);
   const [visible, setVisible] = useState(false);
@@ -33,12 +31,11 @@ export default function LangagesSection() {
         ref={sectionRef}
         className="py-16 px-8 bg-[var(--bg-color)] text-[var(--text-color)] relative"
       >
- 
         <h2 className={`text-3xl md:text-4xl font-bold text-center mb-10 ${visible ? "fade-up" : ""}`}>
-          Langages que vous allez apprendre
+          Langages et technologies que vous allez apprendre
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {[
             {
               icon: (
@@ -103,6 +100,39 @@ Permet aussi de créer des applis mobiles, desktop et backend avec Node.js.`,
 Principalement utilisé avec Flutter pour créer des apps mobiles, web et desktop à partir d’un seul code.
 Rapide, productif et parfait pour de belles interfaces.`,
               delay: "0.6s"
+            },
+            {
+              icon: (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 500 500"
+                  width="90"
+                  height="90"
+                >
+                  <path
+                    fill="#00979D"
+                    d="M250,30C132.3,30,37.5,124.8,37.5,242.5S132.3,455,250,455s212.5-94.8,212.5-212.5S367.7,30,250,30z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    d="M345.3,236c-4.7-22.1-22.9-38.4-44.5-38.4c-24.7,0-44.8,22.1-44.8,49.4s20.1,49.4,44.8,49.4
+                    c19.1,0,35.2-13.7,41.9-32.6h20c-7.4,28.2-31.4,48.6-61.9,48.6c-35.5,0-64.3-32.7-64.3-73s28.8-73,64.3-73
+                    c29.4,0,54.2,21.3,61.1,51.6H345.3z"
+                  />
+                  <path
+                    fill="#FFFFFF"
+                    d="M155,197.6c-24.7,0-44.8,22.1-44.8,49.4s20.1,49.4,44.8,49.4c19.1,0,35.2-13.7,41.9-32.6h20
+                    c-7.4,28.2-31.4,48.6-61.9,48.6c-35.5,0-64.3-32.7-64.3-73s28.8-73,64.3-73c29.4,0,54.2,21.3,61.1,51.6h-20
+                    C190.8,214,172.7,197.6,155,197.6z"
+                  />
+                  <rect x="231" y="237" fill="#FFFFFF" width="38" height="18" />
+                </svg>
+              ),
+              title: "Arduino",
+              desc: `Plateforme open-source basée sur des microcontrôleurs.
+Parfaite pour créer des projets électroniques, domotique, robots et objets connectés.
+Idéale pour apprendre à relier le code au monde physique.`,
+              delay: "0.8s"
             }
           ].map((item, index) => (
             <div

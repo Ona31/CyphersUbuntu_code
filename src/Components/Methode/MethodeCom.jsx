@@ -45,31 +45,30 @@ export default function GithubExercisesSection() {
             Retrouvez nos exercices en C, Python, JavaScript et Dart sur notre dépôt GitHub.  
             Clonez-les, testez-les, améliorez-les et proposez vos solutions.
           </p>
-<a
-  href="https://github.com/ton-utilisateur/ton-repo"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center px-5 py-3 mb-8 bg-gradient-to-br from-[#081028] to-[#0c1a40] bg-opacity-40 backdrop-blur-md border border-[rgba(255,255,255,0.1)] text-white font-semibold rounded-xl shadow-md hover:scale-105 transition"
->
-  <svg
-    className="w-6 h-6 mr-2"
-    fill="currentColor"
-    viewBox="0 0 24 24"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      fillRule="evenodd"
-      d="M12 .5C5.648.5.5 5.648.5 12c0 5.086 3.292 9.393 7.86 10.915.574.106.785-.248.785-.553 0-.273-.01-1-.015-1.96-3.2.694-3.878-1.543-3.878-1.543-.522-1.328-1.274-1.68-1.274-1.68-1.04-.712.078-.698.078-.698 1.15.08 1.754 1.18 1.754 1.18 1.022 1.75 2.68 1.246 3.332.953.104-.74.4-1.246.727-1.533-2.553-.292-5.236-1.276-5.236-5.68 0-1.254.448-2.276 1.18-3.078-.12-.29-.512-1.46.112-3.04 0 0 .96-.31 3.14 1.18a10.93 10.93 0 0 1 2.86-.385c.97.004 1.946.13 2.86.384 2.18-1.49 3.14-1.18 3.14-1.18.624 1.58.232 2.75.113 3.04.736.8 1.18 1.824 1.18 3.078 0 4.414-2.688 5.384-5.25 5.672.416.36.784 1.077.784 2.172 0 1.568-.014 2.832-.014 3.22 0 .308.208.664.792.552C20.712 21.39 24 17.084 24 12c0-6.352-5.148-11.5-12-11.5z"
-      clipRule="evenodd"
-    />
-  </svg>
-  Voir les exercices sur GitHub
-</a>
-
+          <a
+            href="https://github.com/ton-utilisateur/ton-repo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-5 py-3 mb-8 bg-gradient-to-br from-[#081028] to-[#0c1a40] bg-opacity-40 backdrop-blur-md border border-[rgba(255,255,255,0.1)] text-white font-semibold rounded-xl shadow-md hover:scale-105 transition"
+          >
+            <svg
+              className="w-6 h-6 mr-2"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fillRule="evenodd"
+                d="M12 .5C5.648.5.5 5.648.5 12c0 5.086 3.292 9.393 7.86 10.915.574.106.785-.248.785-.553 0-.273-.01-1-.015-1.96-3.2.694-3.878-1.543-3.878-1.543-.522-1.328-1.274-1.68-1.274-1.68-1.04-.712.078-.698.078-.698 1.15.08 1.754 1.18 1.754 1.18 1.022 1.75 2.68 1.246 3.332.953.104-.74.4-1.246.727-1.533-2.553-.292-5.236-1.276-5.236-5.68 0-1.254.448-2.276 1.18-3.078-.12-.29-.512-1.46.112-3.04 0 0 .96-.31 3.14 1.18a10.93 10.93 0 0 1 2.86-.385c.97.004 1.946.13 2.86.384 2.18-1.49 3.14-1.18 3.14-1.18.624 1.58.232 2.75.113 3.04.736.8 1.18 1.824 1.18 3.078 0 4.414-2.688 5.384-5.25 5.672.416.36.784 1.077.784 2.172 0 1.568-.014 2.832-.014 3.22 0 .308.208.664.792.552C20.712 21.39 24 17.084 24 12c0-6.352-5.148-11.5-12-11.5z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Voir les exercices sur GitHub
+          </a>
 
           <h3 className="text-xl font-semibold mb-6">⚙️ Prérequis</h3>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-6">
             {/* VSCode */}
             <div className="flex flex-col items-center text-center p-5 bg-gradient-to-br from-[#081028] to-[#0c1a40] bg-opacity-40 backdrop-blur-md border border-[rgba(255,255,255,0.1)] text-white rounded-xl shadow-md">
               <img
@@ -130,6 +129,27 @@ export default function GithubExercisesSection() {
                 className="inline-flex items-center px-4 py-2 bg-gradient-to-br from-[#081028] to-[#0c1a40] bg-opacity-40 backdrop-blur-md border border-[rgba(255,255,255,0.1)] text-white text-sm rounded-xl shadow-md hover:scale-105 transition"
               >
                 Créer un compte GitHub
+              </a>
+            </div>
+
+            {/* Arduino IDE */}
+            <div className="flex flex-col items-center text-center p-5 bg-gradient-to-br from-[#081028] to-[#0c1a40] bg-opacity-40 backdrop-blur-md border border-[rgba(255,255,255,0.1)] text-white rounded-xl shadow-md">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/87/Arduino_Logo.svg"
+                alt="Arduino Logo"
+                className="w-14 h-14 mb-3"
+              />
+              <h4 className="font-semibold mb-1">IDE Arduino</h4>
+              <p className="text-sm mb-3">
+                Pour coder, compiler et téléverser vos projets sur cartes Arduino facilement.
+              </p>
+              <a
+                href="https://www.arduino.cc/en/software"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-br from-[#081028] to-[#0c1a40] bg-opacity-40 backdrop-blur-md border border-[rgba(255,255,255,0.1)] text-white text-sm rounded-xl shadow-md hover:scale-105 transition"
+              >
+                Télécharger l'IDE
               </a>
             </div>
           </div>
